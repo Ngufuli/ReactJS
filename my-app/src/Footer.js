@@ -23,10 +23,6 @@ class Footer extends Component{
             </h3>
             <h3>
                 <ul>
-                    <li>Un</li>
-                    <li>Deux</li>
-                    <li>Trois</li>
-                    <li>Quatre</li>
                     <li>{this.state.desc} (Hello world)</li>
                 </ul>
             </h3>
