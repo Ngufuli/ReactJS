@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Footer from './Footer';
+import Body from './Body';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Body name="This is the body Written by NavQuery"/>
       <Footer />
     </div>
     
