@@ -27,6 +27,9 @@ class Footer extends Component{
                 </ul>
             </h3>
             <button onClick={() => this.ChangeText()}>Change text</button>
+            <div>
+                <br/>
+            </div>
         </div>
     }
 }
