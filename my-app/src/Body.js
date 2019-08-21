@@ -8,12 +8,13 @@ class Body extends Component{
             one: "These are the changes to be made!"
         }
         // binding will be done in here, inside the constructor(it preffered in here than in the render method)
-        this.change = this.change.bind(this);
+        // this.change = this.change.bind(this);
     }
 
-    change(){
+    change = () =>{
+        console.log(this);
         this.setState({
-            one: "Just made changes!"
+            one: "New changes have been made"
         })
     }
 
