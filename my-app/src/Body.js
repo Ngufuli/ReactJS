@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import styles from './App.module.css';
 
 class Body extends Component{
     constructor(){
@@ -32,7 +33,7 @@ class Body extends Component{
 
     render(){
         return <div>
-            <h2>{this.state.one}This is header two</h2>
+            <h2 className={styles.color}>{this.state.one}This is header two</h2>
             <h2>{this.state.one1}The other second header</h2>
             <br/>
             <p>This is React This is React This is React This is React</p>

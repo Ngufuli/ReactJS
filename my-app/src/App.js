@@ -9,7 +9,7 @@ import Header from './Header';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header desc="Hello world" name="Hakuna Matata"/>
       <Body name="This is the body Written by NavQuery"/>
       <Footer />
     </div>
