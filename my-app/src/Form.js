@@ -15,6 +15,7 @@ class Form extends Component{
                 <input type="password"></input>
                 <br />
                 {/* <input type="textarea" width="250px" height="250px"></input> */}
+                <input type="submit"></input>
             </form>
         </div>
     }
