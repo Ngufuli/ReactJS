@@ -5,6 +5,8 @@ class Form extends Component{
         return <div>
             <label for="">First Name:</label>
             <input type="text"></input>
+            <label for="">Last Name:</label>
+            <input type="text"></input>
 
         </div>
     }
