@@ -14,6 +14,12 @@ class Footer extends Component{
             desc: "Changes have been made."
         })
     }
+
+    static getDerivedStateFromProps(props, state){
+        console.log(`getDerivedStateFromProps called`);
+        return null;
+    }
+
     render(){
         return <div>
             <h3>
