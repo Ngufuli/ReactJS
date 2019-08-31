@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 class Footer extends Component{
     constructor(){
+        console.log(`Contructor has been loaded`);
         super();
         this.state = {
             desc: "This is the description"
