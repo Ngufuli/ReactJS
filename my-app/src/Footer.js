@@ -20,7 +20,16 @@ class Footer extends Component{
         return null;
     }
 
+
+//Used to decide if the render method should execute or not
+    shouldComponentUpdate(nextprops, nextstate){
+        console.log(`Next state ${nextstate}`);
+        console.log(`Current state ${this.state}`)
+        return true;
+    }
+
     render(){
+        console.log(`Render method has been executed`);
         return <div>
             <h3>
                 <li>One</li>
