@@ -25,18 +25,21 @@
 import React, {Component} from 'react';
 
 function Body(){
-    return <div>
-        <h2>Nicodemus Ngufuli</h2>
-        <p>I like exploring the world and visiting different places arround the world</p>
-        <p>Below are some of the places that I aspire to visit some day in the near future</p>
-        <ol>
-            <li>Russia</li>
-            <li>Japan</li>
-            <li>Canada</li>
-            <li>Australia</li>
-            <li>Canary Islands</li>
-        </ol>
+    return(
+    <div><input type="checkbox" name="" value=""></input>
+    <p>This is the checkbox</p>
+
+    <input type="checkbox" name="" value=""></input>
+    <p>This is the checkbox</p>
+
+    <input type="checkbox" name="" value=""></input>
+    <p>This is the checkbox</p>
+
+    <input type="checkbox" name="" value=""></input>
+    <p>This is the checkbox</p>
+    
     </div>
+    );
 }
 
 export default Body;
