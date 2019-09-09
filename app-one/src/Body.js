@@ -30,10 +30,22 @@ function Body(){
     const collage = "Lovely Professional University";
     const degree = "Btech Computer Science and Engineering";
     const date = new Date();
+    const hours = date.getHours();
+    let timing;
+
+    if(hours < 12){
+        timing = "Good morning";
+    }
+    else if(hours >=12 && hours <= 17){
+        timing = "Good evening";
+    }
+    else{
+        timing = "Good night";
+    }
 
     return(
     <div>
-    <h2>It is currently arround {date.getHours() % 12}</h2>
+    <h2>{timing}</h2>
     <h3>Hellow Mr. {firstName + " " + lastName}</h3>
     <h3>{`Collage: ${collage}`}</h3>
     <h3>{`Degree: ${degree}`}</h3>
