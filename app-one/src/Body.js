@@ -26,7 +26,7 @@ import React, {Component} from 'react';
 
 function Body(){
     return(
-    <div><input type="checkbox" name="" value=""></input>
+    <div className='backGroundColor'><input type="checkbox" name="" value=""></input>
     <p>This is the checkbox</p>
 
     <input type="checkbox" name="" value=""></input>

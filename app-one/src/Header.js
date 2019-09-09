@@ -8,7 +8,7 @@ class Header extends Component{
 
     render(){
         return <div>
-            <h2>This is the header section</h2>
+            <h2 j>This is the header section</h2>
         </div>
     }
 }
