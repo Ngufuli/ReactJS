@@ -27,6 +27,8 @@ import React, {Component} from 'react';
 function Body(){
     const firstName = "Nicodemus";
     const lastName = "Ngufuli";
+    const collage = "Lovely Professional University";
+    const degree = "Btech Computer Science and Engineering";
 
     return(
     <div>
