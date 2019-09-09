@@ -32,7 +32,9 @@ function Body(){
 
     return(
     <div>
-    <h2>Hellow Mr. {firstName + " " + lastName}</h2>
+    <h3>Hellow Mr. {firstName + " " + lastName}</h3>
+    <h3>College: {collage}</h3>
+    <h3>Degree: {degree}</h3>
     
     </div>
     );
