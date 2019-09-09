@@ -27,10 +27,10 @@ import React, {Component} from 'react';
 function Body(){
     const firstName = "Nicodemus";
     const lastName = "Ngufuli";
-    
+
     return(
-    <div className='backGroundColor'><input type="checkbox" name="" value=""></input>
-    
+    <div>
+    <h2>Hellow Mr. {firstName + " " + lastName}</h2>
     
     </div>
     );
