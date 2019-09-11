@@ -1,68 +1,68 @@
+// // import React, {Component} from 'react';
+
+// // class Body extends Component{
+// //     state = {
+
+// //     }
+
+// //     render(){
+// //         return<div>
+// //             <ol>
+// //                 <li>Moja</li>
+// //                 <li>Mbili</li>
+// //                 <li>Tatu</li>
+// //                 <li>Nne</li>
+// //                 <li>Tano</li>
+// //             </ol>
+// //         </div>
+// //     }
+// // }
+
+// // export default Body;
+
+// //======================FUNCTIONAL COMPONENTS============================================
+
 // import React, {Component} from 'react';
 
-// class Body extends Component{
-//     state = {
+// function Body(){
+//     const firstName = "Nicodemus";
+//     const lastName = "Ngufuli";
+//     const collage = "Lovely Professional University";
+//     const degree = "Btech Computer Science and Engineering";
+//     const date = new Date();
+//     const hours = date.getHours();
+//     let timing;
 
+//     if(hours < 12){
+//         timing = "Good morning";
+//     }
+//     else if(hours >=12 && hours <= 17){
+//         timing = "Good evening";
+//     }
+//     else{
+//         timing = "Good night";
 //     }
 
-//     render(){
-//         return<div>
-//             <ol>
-//                 <li>Moja</li>
-//                 <li>Mbili</li>
-//                 <li>Tatu</li>
-//                 <li>Nne</li>
-//                 <li>Tano</li>
-//             </ol>
-//         </div>
-//     }
+//     return(
+//     <div>
+//     <h2 style={{color: '#aff'}}>{timing}</h2>
+//     <h3 style={{color: '#faf', backgroundColor: "#aff"}}>Hellow Mr. {firstName + " " + lastName}</h3>
+//     <h3>{`Collage: ${collage}`}</h3>
+//     <h3>{`Degree: ${degree}`}</h3>
+//     </div>
+//     );
 // }
 
 // export default Body;
 
-//======================FUNCTIONAL COMPONENTS============================================
 
-import React, {Component} from 'react';
+import React from 'react';
+import TodoItems from './TodoItems';
 
 function Body(){
-    // const firstName = "Nicodemus";
-    // const lastName = "Ngufuli";
-    // const collage = "Lovely Professional University";
-    // const degree = "Btech Computer Science and Engineering";
-    // const date = new Date();
-    // const hours = date.getHours();
-    // let timing;
-
-    // if(hours < 12){
-    //     timing = "Good morning";
-    // }
-    // else if(hours >=12 && hours <= 17){
-    //     timing = "Good evening";
-    // }
-    // else{
-    //     timing = "Good night";
-    // }
-
-    // return(
-    // <div>
-    // {/* <h2 style={{color: '#aff'}}>{timing}</h2>
-    // <h3 style={{color: '#faf', backgroundColor: "#aff"}}>Hellow Mr. {firstName + " " + lastName}</h3>
-    // <h3>{`Collage: ${collage}`}</h3>
-    // <h3>{`Degree: ${degree}`}</h3> */}
-    return(        <div>
-            <input type="checkbox"></input>
-            <p>Placeholder text here</p>
-
-            <input type="checkbox"></input>
-            <p>Placeholder text here</p>
-
-            <input type="checkbox"></input>
-            <p>Placeholder text here</p>
-
-            <input type="checkbox"></input>
-            <p>Placeholder text here</p>
-            </div>
-    );
+    return <div>
+        <TodoItems />
+    </div>
 }
 
 export default Body;
