@@ -72,6 +72,7 @@ function Body(){
             phone="(91)-1549-0856"
             email="nico@navquery.com"
         />
+        <hr />
         <Content 
             name="Ngufuli Ngufuli"
             imageUrl="https://images.unsplash.com/photo-1523306066304-752bcb36cd52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
