@@ -58,10 +58,15 @@
 
 import React from 'react';
 import TodoItems from './TodoItems';
+import Content from './Content';
 
 function Body(){
     return <div>
+        {/* <TodoItems />
         <TodoItems />
+        <TodoItems />
+        <TodoItems /> */}
+        <Content />
     </div>
 }
 
