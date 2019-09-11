@@ -66,8 +66,18 @@ function Body(){
         <TodoItems />
         <TodoItems />
         <TodoItems /> */}
-        <Content />
-        <Content />
+        <Content 
+            name="Nicodemus Ngufuli"
+            imageUrl="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            phone="(91)-1549-0856"
+            email="nico@navquery.com"
+        />
+        <Content 
+            name="Ngufuli Ngufuli"
+            imageUrl="https://images.unsplash.com/photo-1523306066304-752bcb36cd52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            phone="(255)7-5380-7743"
+            email="we@work.com"
+        />
     </div>
 }
 
