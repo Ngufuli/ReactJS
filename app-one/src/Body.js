@@ -45,8 +45,8 @@ function Body(){
 
     return(
     <div>
-    <h2 style={{color: '#aaf'}}>{timing}</h2>
-    <h3 style={{color: '#faf', backgroundColor: "#ccf"}}>Hellow Mr. {firstName + " " + lastName}</h3>
+    <h2 style={{color: '#aff'}}>{timing}</h2>
+    <h3 style={{color: '#faf', backgroundColor: "#aff"}}>Hellow Mr. {firstName + " " + lastName}</h3>
     <h3>{`Collage: ${collage}`}</h3>
     <h3>{`Degree: ${degree}`}</h3>
     </div>
