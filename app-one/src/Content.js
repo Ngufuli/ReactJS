@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-function Content(){
+function Content(props){
 const    styles = {
         width: '150px',
         height: '125px',
