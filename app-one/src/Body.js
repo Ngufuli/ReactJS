@@ -67,6 +67,7 @@ function Body(){
         <TodoItems />
         <TodoItems /> */}
         <Content />
+        <Content />
     </div>
 }
 
