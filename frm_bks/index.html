@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pro|MERN</title>
+    <script src=   "https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react.js">  </script>
+    <script src=   "https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-dom.js">  </script> 
+    <script src=   "https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js">  </script> 
+    <style>
+        .table {
+            padding: 20px;
+            border: 10px solid yellow;
+            border-radius: 50px;
+            margin: 10px solid yellow;
+            grid-area: auto;
+        }
+        .row {
+            padding: 20px;
+            border: 4px solid yellow;
+            margin: 10px
+        }
+        .he {
+            border-bottom: 7px solid cyan;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contents">
+
+    </div>
+    <script type="text/babel">  
+      var contentNode = document.getElementById('contents');
+         var component = <div>
+                <h2>Welcomen to Nico's page</h2>
+                <p>Nicodemus Peter Ngufuli is a full fledged full stack web developer</p>
+                <tt>NavQuery</tt>
+                <table className="table">
+                    <tr className="row">
+                        <th className="he">Company</th>
+                        <th className="he">Founder</th>
+                        <th className="he">Founder</th>
+                    </tr>
+                    <tr className="row">
+                        <td className="row">NavQuery Inc</td>
+                        <td className="row">Nicodemus Ngufuli</td>
+                        <td className="row">Eckysaroyd Nyato</td>
+                    </tr>
+                </table>
+            </div>; 
+              // A simple JSX component    
+          ReactDOM.render(component, contentNode);  //  Render the component inside  the content Node 
+    </script>
+</body>
+</html>
