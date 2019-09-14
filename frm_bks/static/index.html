@@ -7,7 +7,7 @@
     <title>Pro|MERN</title>
     <script src=   "https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react.js">  </script>
     <script src=   "https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-dom.js">  </script> 
-    <script src=   "https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js">  </script> 
+    <!-- <script src=   "https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js">  </script>  -->
     <style>
         .table {
             padding: 20px;
@@ -51,27 +51,8 @@
     <div id="contents">
 
     </div>
-    <script type="text/babel">  
-      var contentNode = document.getElementById('contents');
-         var component = <div>
-                <h2>Welcome to Nico's page</h2>
-                <p>Nicodemus Peter Ngufuli is a full fledged full stack web developer</p>
-                
-                <table className="table">
-                    <tr className="row">
-                        <th className="he">Degree</th>
-                        <th className="he">ACSE</th>
-                        <th className="he">CSEE</th>
-                    </tr>
-                    <tr className="row">
-                        <td className="row">Btech. Computer Science and Engineering Inc</td>
-                        <td className="row">Physics, Chemistry, Biology</td>
-                        <td className="row">Science</td>
-                    </tr>
-                </table>
-            </div>; 
-              // A simple JSX component    
-          ReactDOM.render(component, contentNode);  //  Render the component inside  the content Node 
+    <script src="/app.js">  
+      
     </script>
 </body>
 </html>
