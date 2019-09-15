@@ -1,11 +1,16 @@
-const contentNode = document.getElementById('contents');
 
-const continents = ['Africa', 'America', 'Asia', 'Australia', 'Europe'];
-const message = continents.map(c => `Hello ${c}!`).join(' ');
 
-const component = React.createElement(
-  'p',
-  null,
-  message,
-);
-ReactDOM.render(component, contentNode);
+class Home extends React.Component {
+    render() {
+        return React.createElement(
+            'div',
+            null,
+            React.createElement(
+                'h1',
+                null,
+                'This is the beginning!'
+            )
+        );
+    }
+}
+ReactDOM.render(React.createElement(Home, null), document.getElementById('contents'));
