@@ -26,8 +26,8 @@ class Body extends React.Component{
                     </thead>
                     <tbody>
                         <tr>
-                            <td style={borderStyle}>Nicodemus</td>
-                            <td style={borderStyle}>Computer Science</td>
+                            <td style={borderStyle}>{this.props.name}</td>
+                            <td style={borderStyle}>{this.props.degree}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -41,7 +41,7 @@ class Cmp extends React.Component{
         return(
             <div>
                 <Home/>
-                <Body/>
+                <Body name="Nicodemus Ngufuli" degree="Computer Science and Engineering"/>
             </div>
         );
     }

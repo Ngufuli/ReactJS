@@ -52,12 +52,12 @@ class Body extends React.Component {
                         React.createElement(
                             'td',
                             { style: borderStyle },
-                            'Nicodemus'
+                            this.props.name
                         ),
                         React.createElement(
                             'td',
                             { style: borderStyle },
-                            'Computer Science'
+                            this.props.degree
                         )
                     )
                 )
@@ -72,7 +72,7 @@ class Cmp extends React.Component {
             'div',
             null,
             React.createElement(Home, null),
-            React.createElement(Body, null)
+            React.createElement(Body, { name: 'Nicodemus Ngufuli', degree: 'Computer Science and Engineering' })
         );
     }
 }
