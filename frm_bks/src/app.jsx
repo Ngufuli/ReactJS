@@ -11,19 +11,23 @@ class Home extends React.Component{
 }
 class Body extends React.Component{
     render(){
+        const borderStyle = {
+            border: '1px solid silver',
+            padding: 6
+        }
         return(
             <div>
-                <table>
+                <table style={{borderCollapse: 'collapse'}}>
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Course</th>
+                            <th style={borderStyle}>Name</th>
+                            <th style={borderStyle}>Course</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Nicodemus</td>
-                            <td>Computer Science</td>
+                            <td style={borderStyle}>Nicodemus</td>
+                            <td style={borderStyle}>Computer Science</td>
                         </tr>
                     </tbody>
                 </table>

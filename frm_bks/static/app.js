@@ -15,12 +15,16 @@ class Home extends React.Component {
 }
 class Body extends React.Component {
     render() {
+        const borderStyle = {
+            border: '1px solid silver',
+            padding: 6
+        };
         return React.createElement(
             'div',
             null,
             React.createElement(
                 'table',
-                null,
+                { style: { borderCollapse: 'collapse' } },
                 React.createElement(
                     'thead',
                     null,
@@ -29,12 +33,12 @@ class Body extends React.Component {
                         null,
                         React.createElement(
                             'th',
-                            null,
+                            { style: borderStyle },
                             'Name'
                         ),
                         React.createElement(
                             'th',
-                            null,
+                            { style: borderStyle },
                             'Course'
                         )
                     )
@@ -47,12 +51,12 @@ class Body extends React.Component {
                         null,
                         React.createElement(
                             'td',
-                            null,
+                            { style: borderStyle },
                             'Nicodemus'
                         ),
                         React.createElement(
                             'td',
-                            null,
+                            { style: borderStyle },
                             'Computer Science'
                         )
                     )
