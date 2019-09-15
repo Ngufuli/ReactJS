@@ -1,3 +1,5 @@
+const out = document.getElementById("root");
+
 class issueFilter extends React.Component{
     render(){
         return(
@@ -32,12 +34,17 @@ class issueList extends React.Component{
     render(){
         return(
             <div>
+                <h1>Issue Filter</h1>
                 <issueFilter />
+                <hr/>
+                <h1>Issue Table</h1>
                 <issueTable />
+                <hr/>
+                <h1>Issue Form</h1>
                 <issueForm />
             </div>
         );
     }
 }
 
-ReactDOM.render(<issueList />, document.getElementById('contents'));
+ReactDOM.render(<issueList />, out);
