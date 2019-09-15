@@ -1,46 +1,6 @@
-class issueFilter extends React.Component {
-    render() {
-        return React.createElement(
-            'div',
-            null,
-            React.createElement(
-                'h2',
-                null,
-                'This is the placeholder for issue filter'
-            )
-        );
-    }
-}
+const one = document.getElementById('root');
 
-class issueTable extends React.Component {
-    render() {
-        return React.createElement(
-            'div',
-            null,
-            React.createElement(
-                'h3',
-                null,
-                'This is the placeholder for table issues'
-            )
-        );
-    }
-}
-
-class issueForm extends React.Component {
-    render() {
-        return React.createElement(
-            'div',
-            null,
-            React.createElement(
-                'h3',
-                null,
-                'This is the placeholder for add entry form'
-            )
-        );
-    }
-}
-
-class issueList extends React.Component {
+class Home extends React.Component {
     render() {
         return React.createElement(
             'div',
@@ -48,25 +8,69 @@ class issueList extends React.Component {
             React.createElement(
                 'h1',
                 null,
-                'Issue Filter'
-            ),
-            React.createElement('issueFilter', null),
-            React.createElement('hr', null),
+                'This is the header'
+            )
+        );
+    }
+}
+class Body extends React.Component {
+    render() {
+        return React.createElement(
+            'div',
+            null,
             React.createElement(
-                'h1',
+                'table',
                 null,
-                'Issue Table'
-            ),
-            React.createElement('issueTable', null),
-            React.createElement('hr', null),
-            React.createElement(
-                'h1',
-                null,
-                'Issue Form'
-            ),
-            React.createElement('issueForm', null)
+                React.createElement(
+                    'thead',
+                    null,
+                    React.createElement(
+                        'tr',
+                        null,
+                        React.createElement(
+                            'th',
+                            null,
+                            'Name'
+                        ),
+                        React.createElement(
+                            'th',
+                            null,
+                            'Course'
+                        )
+                    )
+                ),
+                React.createElement(
+                    'tbody',
+                    null,
+                    React.createElement(
+                        'tr',
+                        null,
+                        React.createElement(
+                            'td',
+                            null,
+                            'Nicodemus'
+                        ),
+                        React.createElement(
+                            'td',
+                            null,
+                            'Computer Science'
+                        )
+                    )
+                )
+            )
         );
     }
 }
 
-ReactDOM.render(React.createElement('issueList', null), document.getElementById('root'));
+class Cmp extends React.Component {
+    render() {
+        return React.createElement(
+            'div',
+            null,
+            React.createElement(Home, null),
+            React.createElement(Body, null)
+        );
+    }
+}
+
+ReactDOM.render(React.createElement(Cmp, null), one);
