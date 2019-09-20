@@ -52,9 +52,9 @@ class Issue extends React.Component{
     render(){
         
         return (
-            <Fragment>
+            <div>
             <h6>Here is the json data</h6>
-        </Fragment>
+        </div>
         );
     }
 }

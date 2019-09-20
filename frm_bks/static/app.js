@@ -79,7 +79,7 @@ class Issue extends React.Component {
     render() {
 
         return React.createElement(
-            Fragment,
+            'div',
             null,
             React.createElement(
                 'h6',
