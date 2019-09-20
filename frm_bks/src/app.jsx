@@ -52,11 +52,9 @@ class Issue extends React.Component{
     render(){
         
         return (
-            <div>
-            <span issues={issues}>
-                
-            </span>
-        </div>
+            <Fragment>
+            <h6>Here is the json data</h6>
+        </Fragment>
         );
     }
 }

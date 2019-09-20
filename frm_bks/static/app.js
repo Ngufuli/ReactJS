@@ -79,9 +79,13 @@ class Issue extends React.Component {
     render() {
 
         return React.createElement(
-            'div',
+            Fragment,
             null,
-            React.createElement('span', { issues: issues })
+            React.createElement(
+                'h6',
+                null,
+                'Here is the json data'
+            )
         );
     }
 }
