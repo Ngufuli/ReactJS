@@ -1,4 +1,13 @@
 const one = document.getElementById('root');
+const issues = [{
+    id: 1, status: 'Open', owner: 'McKieran',
+    created: new Date('2019-11-21'), effort: 5, completionDate: undefined,
+    title: 'Error in console when clickinga Add'
+}, {
+    id: 2, status: 'Assigned', owner: 'Derrick',
+    create: new Date('2019-10=17'), effort: 12, completionDate: new Date('2020-10-19'),
+    title: 'Missing bottom border on panel'
+}];
 
 class Home extends React.Component {
     render() {
@@ -66,13 +75,25 @@ class Body extends React.Component {
     }
 }
 
+class Issue extends React.Component {
+    render() {
+
+        return React.createElement(
+            'div',
+            null,
+            React.createElement('span', { issues: issues })
+        );
+    }
+}
+
 class Cmp extends React.Component {
     render() {
         return React.createElement(
             'div',
             null,
             React.createElement(Home, null),
-            React.createElement(Body, { name: 'Nicodemus Ngufuli', degree: 'Computer Science and Engineering' })
+            React.createElement(Body, { name: 'Nicodemus Ngufuli', degree: 'Computer Science and Engineering' }),
+            React.createElement(Issue, { issues: issues })
         );
     }
 }

@@ -48,12 +48,26 @@ class Body extends React.Component{
     }
 }
 
+class Issue extends React.Component{
+    render(){
+        
+        return (
+            <div>
+            <span issues={issues}>
+                
+            </span>
+        </div>
+        );
+    }
+}
+
 class Cmp extends React.Component{
     render(){
         return(
             <div>
                 <Home/>
                 <Body name="Nicodemus Ngufuli" degree="Computer Science and Engineering"/>
+                <Issue issues={issues}/>
             </div>
         );
     }
