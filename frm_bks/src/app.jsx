@@ -67,7 +67,9 @@ class Cmp extends React.Component{
             <div>
                 <Home/>
                 <Body name="Nicodemus Ngufuli" degree="Computer Science and Engineering"/>
+                <hr/>
                 <Issue issues={issues}/>
+                <hr/>
             </div>
         );
     }

@@ -93,7 +93,9 @@ class Cmp extends React.Component {
             null,
             React.createElement(Home, null),
             React.createElement(Body, { name: 'Nicodemus Ngufuli', degree: 'Computer Science and Engineering' }),
-            React.createElement(Issue, { issues: issues })
+            React.createElement('hr', null),
+            React.createElement(Issue, { issues: issues }),
+            React.createElement('hr', null)
         );
     }
 }
